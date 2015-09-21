@@ -3,7 +3,11 @@
 <head>
   <title>Dev Match</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
+<<<<<<< HEAD
   <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
+=======
+  <%= javascript_include_tag 'https://js.stripe.com/v2/', type: 'text/javascript' %>
+>>>>>>> a42814cea71c3cd67f800284f8a7888c91efab37
   <%= javascript_include_tag 'application' %>
   <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
   <%= csrf_meta_tags %>

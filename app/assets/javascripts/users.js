@@ -20,6 +20,7 @@ $(document).ready(function() {
     }
     return false;
   }); // form submission
+<<<<<<< HEAD
   function stripeResponseHandler(status, response) {
     // Get a reference to the form:
     var f = $("#new_user");
@@ -27,6 +28,19 @@ $(document).ready(function() {
     var token = response.id;
     // Add the token to the form:
     f.append('<input type="hidden" name="user[stripe_card_token]" value="' + token + '" />');
+=======
+  
+  function stripeResponseHandler(status, response) {
+    // Get a reference to the form:
+    var f = $("#new_user");
+    
+    // Get the token from the response:
+    var token = response.id;
+    
+    // Add the token to the form:
+    f.append('<input type="hidden" name="user[stripe_card_token]" value="' + token + '" />');
+    
+>>>>>>> a42814cea71c3cd67f800284f8a7888c91efab37
     // Submit the form:
     f.get(0).submit(); 
   }
